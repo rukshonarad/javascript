@@ -21,22 +21,19 @@
 // var principal = 50;
 // var rate = 10;
 // var time = 2;
-// interest = (principal * rate * time) / 100;
+// var interest = (principal * rate * time) / 100;
 // console.log(interest);
 
 //Part-4//
 
 var a = 25;
 var b = 30;
-// a += b;
-// console.log(a);
-// a -= b;
-// console.log(a);
-b -= a;
-console.log(b);
-b += a;
-console.log(b);
-console.log(a);
+
+// console.log(a =", a, ", b =", b);
+// a = a + b;
+// b = a - b;
+// a = a - b;
+// console.log(a =", a, ", b =", b);
 
 // Part- 5.1 //
 var radius = 180;
