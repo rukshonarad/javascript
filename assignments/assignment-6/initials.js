@@ -25,6 +25,7 @@ var lastNameInitial = fullName2[lastNameInitial];
 console.log(firstNameInitial);
 console.log(lastNameInitial);
 var result2 = (firstNameInitial + lastNameInitial).toUpperCase();
+
 console.log(result2);
 
 //3 //
@@ -36,5 +37,7 @@ var lastNameInitial = spaceName3 + 1;
 var lastNameInitial = fullName3[lastNameInitial];
 console.log(firstNameInitial);
 console.log(lastNameInitial);
+
 var result3 = (firstNameInitial + lastNameInitial).toUpperCase();
+
 console.log(result3);
