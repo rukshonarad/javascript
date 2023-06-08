@@ -1,6 +1,7 @@
 // Firs part //
 var number1 = Math.floor(Math.random() * 10) + 1;
 
+var name;
 if (number1 >= 1 && number1 <= 3) {
     name = "Bob";
 } else if (number1 <= 4 && number1 <= 7) {
