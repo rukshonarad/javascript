@@ -88,4 +88,5 @@ function concatenateAndToUpper(str1, str2) {
     var result = str1.concat(str2).toUpperCase();
     return result;
 }
+
 console.log(concatenateAndToUpper("hello", "world"));
