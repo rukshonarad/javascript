@@ -84,7 +84,7 @@ function threeStrings(str1, str2, str3) {
 console.log(threeStrings("book", "school", "bookschool"));
 console.log(threeStrings("book", "school", "hello"));
 
-// Create a function that takes a string anda number, and checks if the number of characters of the string twice a number. "hello!", 3
+// Create a function that takes a string and a number, and checks if the number of characters of the string twice a number. "hello!", 3
 
 function strAndNum(str, num) {
     if (str.length === num * 2) {
