@@ -96,3 +96,13 @@ function strAndNum(str, num) {
 
 console.log(strAndNum("hello!", 3));
 console.log(strAndNum("hello", 3));
+// ------------//
+//Task -4
+function isArray(arr) {
+    if (Array.isArray(arr)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(isArray([10, 25, 35, 44]));
