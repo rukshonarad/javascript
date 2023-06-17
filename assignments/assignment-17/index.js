@@ -166,3 +166,18 @@ function preserveLetters(str) {
 }
 
 console.log(preserveLetters("Hello, 123"));
+// 10- 2
+function preserveLetters(str) {
+    var preserved = "";
+    for (var i = 0; i < str.length; i++) {
+        var char = str[i];
+        var englishLetters = "abcdefghijklmnopqrstuvwxyz";
+        if (englishLetters.includes(char.toLowerCase())) {
+            preserved += char;
+        }
+    }
+
+    return preserved;
+}
+
+console.log(preserveLetters("Hello, 123"));
