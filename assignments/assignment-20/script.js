@@ -115,4 +115,4 @@ console.log(isValidEmail("john@doe.comm") === false); // Should print: true
 
 // Test for an email where domain name or extension contains invalid characters:
 console.log(isValidEmail("john@do3.com") === false); // Should print: true
-console.log(isValidEmail("john@doe.c_m") === false); // Should print: true
+console.log(isValidEmail("john@doe.c_m") === false); // Should print: true.
