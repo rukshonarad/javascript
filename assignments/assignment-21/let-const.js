@@ -35,7 +35,7 @@ var myFunctionExpression = function () {
     return "This is a function expression!";
 };
 
-// 3
+// Part 3
 var myVar = "I'm a global";
 function someFunction() {
     var myVar = "I'm function scope!";
