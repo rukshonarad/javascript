@@ -1,40 +1,126 @@
-// 1. Creating User Profiles:
-const userProfile = {
-    name: "Jane Doe",
-    age: 28,
-    email: "jane@example.com",
-    isAdmin: true
-};
+// 1. Creating User Profiles
 function printUserProfile(userProfile) {
     for (let key in userProfile) {
         console.log(`${key}: ${userProfile[key]}`);
     }
 }
-
-// printUserProfile(userProfile);
-
+console.log(
+    printUserProfile({
+        name: "John Doe",
+        age: 30,
+        email: "john@example.com",
+        isAdmin: true
+    })
+);
 // 2. Updating Inventory
-
 function addStock(inventory, newInventory) {
-    var updatedInventory = {};
-    for (var key in inventory) {
-        updatedInventory[key] = inventory[key];
-    }
-
-    for (var key in newInventory) {
-        if (updatedInventory[key]) {
-            updatedInventory[key] += newInventory[key];
+    for (let item in newInventory) {
+        if (inventory[item] !== undefined) {
+            inventory[item] += newInventory[item];
         } else {
-            updatedInventory[key] = newInventory[key];
+            inventory[item] = newInventory[item];
         }
     }
-
-    return updatedInventory;
+    return inventory;
 }
-
 console.log(
     addStock(
-        { apple: 10, orange: 5, banana: 20 },
-        { apple: 5, banana: 10, orange: 7 }
+        { apple: 5, banana: 3, orange: 2 },
+        { banana: 2, orange: 3, peach: 5 }
     )
 );
+// 3. Filtering Properties
+let info = {
+    city: "New York",
+    state: "New York",
+    country: "USA",
+    pincode: "10001"
+};
+function filterData(object, key) {
+    return { [key]: object[key] };
+}
+console.log(filterData(info.city));
+// 4. Checking the Perfect Score
+function perfectScore(students) {
+    for (let i = 0; i < students.length; i++) {
+        const student = students[i];
+        if (student.score === 100) {
+            return true;
+        }
+    }
+    return false;
+}
+
+// 5. Counting Occurrences
+function countOccurrence(str) {
+    let count = {};
+    for (let i = 0; i < str.length; i++) {
+        const char = str[i];
+        if (count[char]) {
+            count[char]++;
+        } else {
+            count[char] = 1;
+        }
+    }
+    return count;
+}
+
+// 6. Calculating Average Score
+function calculateAverage(numbers) {
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+    }
+    return sum / numbers.length;
+}
+
+function averageScore(scores) {
+    let averageScores = {};
+    for (let student in scores) {
+        const averageScore = calculateAverage(scores[student]);
+        averageScores[student] = averageScore;
+    }
+    return averageScores;
+}
+
+// 7. Finding Largest Number
+function findLargest(ages) {
+    let oldest = "";
+    let maxAge = 0;
+    for (let person in ages) {
+        if (ages[person] > maxAge) {
+            maxAge = ages[person];
+            oldest = person;
+        }
+    }
+    return oldest;
+}
+
+// 8. Reversing Key-Value Pairs
+function reverseKeyValue(object) {
+    let reversed = {};
+    for (let key in object) {
+        reversed[object[key]] = key;
+    }
+    return reversed;
+}
+
+// 9. Counting Boolean Values
+function countBooleans(array) {
+    let count = { true: 0, false: 0 };
+    for (let i = 0; i < array.length; i++) {
+        const value = array[i];
+        count[value]++;
+    }
+    return count;
+}
+
+// 10. Calculating Total Price
+function calculateTotal(prices, items) {
+    let total = 0;
+    for (let i = 0; i < items.length; i++) {
+        const item = items[i];
+        total += prices[item];
+    }
+    return total;
+}
