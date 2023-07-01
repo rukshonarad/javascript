@@ -50,6 +50,13 @@ function perfectScore(students) {
     }
     return false;
 }
+console.log(
+    perfectScore([
+        { name: "John", score: 98 },
+        { name: "Jane", score: 100 },
+        { name: "Bob", score: 95 }
+    ])
+);
 
 // 5. Counting Occurrences
 function countOccurrence(str) {
@@ -64,7 +71,7 @@ function countOccurrence(str) {
     }
     return count;
 }
-
+console.log(countOccurrence("banana"));
 // 6. Calculating Average Score
 function calculateAverage(numbers) {
     let sum = 0;
@@ -82,7 +89,12 @@ function averageScore(scores) {
     }
     return averageScores;
 }
-
+console.log(
+    averageScore(
+        { Adam: [80, 90, 85], Eve: [88, 92, 89] },
+        { John: [85, 90, 78], Jane: [92, 88, 91] }
+    )
+);
 // 7. Finding Largest Number
 function findLargest(ages) {
     let oldest = "";
@@ -95,7 +107,7 @@ function findLargest(ages) {
     }
     return oldest;
 }
-
+console.log(findLargest({ John: 30, Jane: 32, Bob: 28 }));
 // 8. Reversing Key-Value Pairs
 function reverseKeyValue(object) {
     let reversed = {};
@@ -104,7 +116,7 @@ function reverseKeyValue(object) {
     }
     return reversed;
 }
-
+console.log(reverseKeyValue({ name: "John", age: 30 }));
 // 9. Counting Boolean Values
 function countBooleans(array) {
     let count = { true: 0, false: 0 };
@@ -114,7 +126,7 @@ function countBooleans(array) {
     }
     return count;
 }
-
+console.log(countBooleans([true, false, true, true, false]));
 // 10. Calculating Total Price
 function calculateTotal(prices, items) {
     let total = 0;
@@ -124,3 +136,6 @@ function calculateTotal(prices, items) {
     }
     return total;
 }
+console.log(
+    calculateTotal({ apple: 1, banana: 0.5, orange: 0.75 }, ["apple", "banana"])
+);
