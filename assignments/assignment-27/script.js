@@ -108,3 +108,35 @@ function sumArray(arr) {
 console.log(sumArray([1, 2, [3, 4, 5, 6], 7, [8, 9]]));
 
 //Output: 45;
+
+//6. Capitalize Strings
+function capitalizeArr(arr) {
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        let capitalizeSubArr = [];
+        for (let j = 0; j < arr[i].length; j++) {
+            let char = arr[i][j].toUpperCase();
+            capitalizeSubArr.push(char);
+        }
+        newArr.push(capitalizeSubArr);
+    }
+    return newArr;
+}
+let arr = [["apple", "banana"], ["carrot", "date"], ["eggplant"]];
+console.log(capitalizeArr(arr));
+
+//Output: [['APPLE', 'BANANA'], ['CARROT', 'DATE'], ['EGGPLANT']]
+
+//7. Find Minimum and Maximum Arrays
+// function findMinMaxArrays(arr) {
+//     let obj = {};
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = 0; j < arr[i].length; j++) {
+//             if (arr[i].length > arr[j]) {
+//                 obj.push(arr[i][j]);
+//             }
+//         }
+//     }
+//     return obj;
+// }
+// console.log(findMinMaxArrays[([1, 2, 3], [4, 5], [6, 7, 8, 9])]);
