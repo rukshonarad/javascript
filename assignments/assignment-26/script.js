@@ -84,12 +84,12 @@ function allSubstrings(str) {
 
     for (let i = 0; i < str.length; i++) {
         for (let j = i + 1; j <= str.length; j++) {
-            result.push(str.slice(i, j));
+            result.push(str.slice(i, j)); // i= 0, j= i+1
         }
     }
 
     return result;
 }
 
-console.log(allSubstrings("abc"));
+console.log(allSubstrings("a,b,c"));
 // Expected output: ['a', 'ab', 'abc', 'b', 'bc', 'c']
