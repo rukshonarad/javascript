@@ -165,7 +165,6 @@ function isValidUrl(url) {
 
     return true;
 }
-
 // Valid URLs
 console.log(isValidUrl("https://www.example.com") === true);
 console.log(isValidUrl("https://www.example.com/") === true);
